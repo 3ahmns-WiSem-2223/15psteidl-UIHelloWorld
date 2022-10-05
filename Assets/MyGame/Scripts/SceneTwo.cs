@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,35 +6,35 @@ using UnityEngine.SceneManagement;
 public class SceneTwo : MonoBehaviour
 {
 
-    public float Zahl;
-    public Text ZahlText;
+    public float zahl;
+    public Text zahlText;
     
     void Update()
     {
-        ZahlText.text = Zahl.ToString();
+        zahlText.text = zahl.ToString();
     }
 
-    public void plus()
+    public void Plus()
     {
-        Zahl++;
+        zahl++;
     }
 
-    public void minus()
+    public void Minus()
     {
-        Zahl--;
+        zahl--;
     }
 
-    public void mult()
+    public void Mult()
     {
-        Zahl = Zahl * 2;
+        zahl = zahl * 2;
     }
 
-    public void divid()
+    public void Mivid()
     {
-        Zahl = Zahl / 2;
+        zahl = zahl / 2;
     }
 
-    public void back()
+    public void Back()
     {
         SceneManager.LoadScene("Scene01");
     }
